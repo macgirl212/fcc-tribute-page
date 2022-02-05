@@ -9,6 +9,7 @@ $background: #efd295;
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 #main {
@@ -27,12 +28,12 @@ $background: #efd295;
 
 #image {
     @include centered;
-    width: 50%;
-    max-width: 100%;
+    max-width: 25%;
     margin-top: 3rem;
     margin-bottom: 2rem;
     height: auto;
     border-radius: 50%;
+    box-shadow: 0 0 40px #c25a49;
 }
 
 #img-caption {
@@ -40,9 +41,25 @@ $background: #efd295;
 }
 
 #tribute-info {
-    margin: 2rem;
+    @include centered;
+    text-align: center;
+    width: 45rem;
+    margin-top: 3rem;
+
+    #tribute-intro {
+        font-weight: bold;
+    }
 
     ul {
         margin: 1rem 2rem;
+        text-align: left;
+        width: 25rem;
+        transform: translateX(10rem);
     }
+}
+
+#more-info {
+    padding-bottom: 5rem;
+    padding-top: 2rem;
+    text-align: center;
 }

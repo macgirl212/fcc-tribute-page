@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #main {
@@ -21,12 +23,13 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
-  max-width: 100%;
+  max-width: 25%;
   margin-top: 3rem;
   margin-bottom: 2rem;
   height: auto;
   border-radius: 50%;
+  -webkit-box-shadow: 0 0 40px #c25a49;
+          box-shadow: 0 0 40px #c25a49;
 }
 
 #img-caption {
@@ -34,10 +37,29 @@
 }
 
 #tribute-info {
-  margin: 2rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 45rem;
+  margin-top: 3rem;
+}
+
+#tribute-info #tribute-intro {
+  font-weight: bold;
 }
 
 #tribute-info ul {
   margin: 1rem 2rem;
+  text-align: left;
+  width: 25rem;
+  -webkit-transform: translateX(10rem);
+          transform: translateX(10rem);
+}
+
+#more-info {
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
