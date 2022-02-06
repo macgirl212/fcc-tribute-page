@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lemon&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -5,18 +7,70 @@
           box-sizing: border-box;
 }
 
+body {
+  background-color: #c4c0bc;
+}
+
 #main {
-  background-color: #efd295;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fcebc8;
+  font-size: 1.3rem;
+  width: 95%;
+  max-width: 1100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: -1;
+  border-radius: 2.5rem;
+}
+
+.color-block {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #c25a49;
+  height: 280px;
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1644118232 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: translateY(280px);
+          transform: translateY(280px);
+  z-index: -1;
+}
+
+.custom-shape-divider-top-1644118232 svg {
+  position: relative;
+  display: block;
+  width: calc(138% + 1.3px);
+  height: 85px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1644118232 .shape-fill {
+  fill: #c25a49;
 }
 
 #title {
   background-color: #c25a49;
-  color: #c4c0bc;
-  font-size: 40px;
-  font-family: cursive;
+  color: #000;
+  font-size: 3rem;
+  padding-top: 1.4rem;
+  font-family: 'Lemon', cursive;
   text-align: center;
-  text-shadow: 2px 2px 5px #6b2413;
-  padding: 10px;
+  text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+  z-index: 10;
+  border-top: 3px solid #fff;
 }
 
 #image {
@@ -24,7 +78,7 @@
   margin-left: auto;
   margin-right: auto;
   max-width: 25%;
-  margin-top: 3rem;
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
   height: auto;
   border-radius: 50%;
@@ -41,7 +95,8 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 45rem;
+  width: 50rem;
+  max-width: 95%;
   margin-top: 3rem;
 }
 
@@ -50,16 +105,22 @@
 }
 
 #tribute-info ul {
-  margin: 1rem 2rem;
+  margin: 3rem;
   text-align: left;
-  width: 25rem;
+  width: 28rem;
   -webkit-transform: translateX(10rem);
           transform: translateX(10rem);
 }
 
+#tribute-info ul li {
+  list-style-type: '🍜';
+  -webkit-padding-start: 1ch;
+          padding-inline-start: 1ch;
+}
+
 #more-info {
-  padding-bottom: 5rem;
-  padding-top: 2rem;
+  padding-bottom: 3rem;
+  padding-top: 4rem;
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

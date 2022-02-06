@@ -1,4 +1,6 @@
-$background: #efd295;
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+
+$background: #fcebc8;
 
 @mixin centered {
     display: block;
@@ -12,24 +14,72 @@ $background: #efd295;
     box-sizing: border-box;
 }
 
+body {
+    background-color: #c4c0bc;
+}
+
 #main {
+    @include centered;
     background-color: $background;
+    font-size: 1.3rem;
+    width: 95%;
+    max-width: 1100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: -1;
+    border-radius: 2.5rem;
+}
+
+.color-block {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #c25a49;
+    height: 280px;
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1644118232 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: translateY(280px);
+    z-index: -1;
+}
+
+.custom-shape-divider-top-1644118232 svg {
+    position: relative;
+    display: block;
+    width: calc(138% + 1.3px);
+    height: 85px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1644118232 .shape-fill {
+    fill: #c25a49;
 }
 
 #title {
     background-color: #c25a49;
-    color: #c4c0bc;
-    font-size: 40px;
-    font-family: cursive;
+    color: #000;
+    font-size: 3rem;
+    padding-top: 1.4rem;
+    font-family: 'Lemon', cursive;
     text-align: center;
-    text-shadow: 2px 2px 5px #6b2413;
-    padding: 10px;
+    text-shadow: -2px -2px 0 #fff, 2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff;
+    z-index: 10;
+    border-top: 3px solid #fff;
 }
 
 #image {
     @include centered;
     max-width: 25%;
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     margin-bottom: 2rem;
     height: auto;
     border-radius: 50%;
@@ -43,7 +93,8 @@ $background: #efd295;
 #tribute-info {
     @include centered;
     text-align: center;
-    width: 45rem;
+    width: 50rem;
+    max-width: 95%;
     margin-top: 3rem;
 
     #tribute-intro {
@@ -51,15 +102,20 @@ $background: #efd295;
     }
 
     ul {
-        margin: 1rem 2rem;
+        margin: 3rem;
         text-align: left;
-        width: 25rem;
+        width: 28rem;
         transform: translateX(10rem);
+
+        li {
+            list-style-type: '🍜';
+            padding-inline-start: 1ch;
+        }
     }
 }
 
 #more-info {
-    padding-bottom: 5rem;
-    padding-top: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
     text-align: center;
 }
